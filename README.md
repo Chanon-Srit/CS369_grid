@@ -1,0 +1,2 @@
+# CS369_Responsive_Design_Website
+Repository for Responsive Design wesite (Mobile, Tablet, Desktop) github hosting assignment (CS369)
