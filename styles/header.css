@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 80px;
     padding: 0 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed; /* Position fixed */
@@ -38,7 +38,7 @@
     color: #e8ce83;
 }
 
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 935px) {
     /* For screens narrower than 800px: */
     .header {
         flex-direction: column; /* Stack items vertically */
@@ -50,4 +50,19 @@
         text-align: center; /* Center items */
         margin: 10px 0; /* Add some spacing */
     }
+}
+
+.active {
+    font-size: 24px;
+}
+
+/* Make navigation links bigger */
+.navigation a {
+font-size: 20px; /* Default font size */
+transition: font-size 0.3s; /* Add transition for smooth effect */
+}
+
+/* Make active link bigger */
+.navigation a.active {
+font-size: 26px; /* Increase font size when active */
 }
