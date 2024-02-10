@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* Adjust justify-content as needed */
+    margin-bottom: 48px;
   }
 
   .vertical-container {
@@ -11,7 +12,7 @@
   .vertical-rectangle {
     display: flex;
     flex-direction: column;
-    width: 300px; /* Adjust width as needed */
+    width: 360px; /* Adjust width as needed */
     height: 600px; /* Adjust height as needed */
     background-color: #333; /* Adjust background color as needed */
     margin-bottom: 20px; /* Adjust margin as needed */
@@ -32,7 +33,7 @@
     align-items: center;
   } */
 
-  @media only screen and (max-width: 915px) {
+  @media only screen and (max-width: 1100px) {
     .container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap */
@@ -45,14 +46,16 @@
   }
 }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 764px) {
     /* For screens narrower than 600px: */
     .container {
       justify-content: center; /* Center the containers */
       align-items: center; /* Center the containers vertically */
       flex-direction: column; /* Stack the containers vertically */
+      
     }
     .vertical-container {
       width: 90%; /* Make each container take up full width */
+      margin-left: 66px;
     }
   }
