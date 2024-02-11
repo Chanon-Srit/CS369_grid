@@ -28,6 +28,37 @@
     margin: 5px; /* Adjust margin as needed */
   }
 
+  .resume-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    }
+
+    .resume-content {
+    flex: 1;
+    background-image: url('resume-1.png');
+    background-size:contain; /* Cover the entire content area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    /* You can add more styles to the content if needed */
+    cursor: pointer;
+    }
+
+    .full-size {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      background-color: rgba(0, 0, 0, 0.8);
+      background-image: url('resume-1.png'); /* Corrected path using forward slash */
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: zoom-out;
+      }
+  
 
   @media only screen and (max-width: 1100px) {
     .container {

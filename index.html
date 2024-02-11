@@ -9,11 +9,11 @@
     <link href="styles/general.css" rel="stylesheet">
     <link href="styles/header.css" rel="stylesheet">
     <link href="styles/contents.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
 
     <title>ChanonPage</title>
     
     <style>
-
 
 
     </style>
@@ -190,15 +190,19 @@ Football player
     font-family: roboto;
     font-size: 38px;
     font-weight: 500;">Resume</div>
-    <div class="vertical-container" style="
+    <!-- <div class="descripstion"></div> -->
+    <div class="resume-container" style="
         flex: 1;
-        background-color: #333;
         border-radius: 10px;
+        background-color: #333;
         ">
-    
+        <div class="resume-content" id="resume-content">   </div>
       </div>
-    </div>
+      </div>
 
+  <div class="footer">
+        <pre>ติดต่อ     โทร: 096-980-8885    อีเมล: chanon.srit@dome.tu.ac.th</pre>
+  </div>
     <script>
       document.addEventListener('scroll', function() {
           var sections = document.querySelectorAll('.container');
@@ -214,6 +218,9 @@ Football player
               }
           });
       });
+  document.getElementById("resume-content").addEventListener("click", function() {
+          this.classList.toggle("full-size");
+  });
   </script>
 </body>
 </html>
