@@ -35,29 +35,45 @@
     }
 
     .resume-content {
-    flex: 1;
-    background-image: url('resume-1.png');
-    background-size:contain; /* Cover the entire content area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    /* You can add more styles to the content if needed */
-    cursor: pointer;
+      flex: 1;
+      display: flex; /* Ensure proper sizing */
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; /* Hide overflow if the image is larger than the container */
     }
 
-    .full-size {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1000;
-      background-color: rgba(0, 0, 0, 0.8);
-      background-image: url('resume-1.png'); /* Corrected path using forward slash */
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      cursor: zoom-out;
-      }
+    .resume-content img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto; /* Maintain aspect ratio */
+      width: auto; /* Maintain aspect ratio */
+      max-height: calc(100% - 20px); /* Adjusted to fit within the container */
+      max-width: calc(100% - 20px); /* Adjusted to fit within the container */
+      cursor: pointer;
+}
+
+.full-size img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* Ensure the entire image is visible */
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.full-size::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the background overlay color and opacity */
+  z-index: 1000;
+}
   
 
   @media only screen and (max-width: 1100px) {
