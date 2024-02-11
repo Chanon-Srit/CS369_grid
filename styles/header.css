@@ -38,7 +38,7 @@
     color: #e8ce83;
 }
 
-@media only screen and (max-width: 935px) {
+@media only screen and (max-width: 980px) {
     /* For screens narrower than 800px: */
     .header {
         flex-direction: column; /* Stack items vertically */

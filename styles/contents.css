@@ -7,12 +7,8 @@
     padding-right: 30px;
     margin-bottom: 50px;
   }
-
-  .vertical-container {
-    /* margin-right: 20px; Remove margin-right */
-  }
   
-  .vertical-rectangle {
+  .vertical-rectangle{
     display: flex;
     flex-direction: column;
     width: 360px; /* Adjust width as needed */
@@ -32,10 +28,6 @@
     margin: 5px; /* Adjust margin as needed */
   }
 
-  /* Adjust text alignment for the first inner div */
-  /* .inner-div:first-child {
-    align-items: center;
-  } */
 
   @media only screen and (max-width: 1100px) {
     .container {
