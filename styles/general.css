@@ -11,6 +11,9 @@ body {
     background-color: #f8f8f8;
 }
 
-pre{
+pre {
+    font-size: 50px;
     font-family: Roboto,Arial;
-}
+    font-weight: 500;
+    padding-left: 12px;
+  }
