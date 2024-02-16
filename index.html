@@ -150,7 +150,7 @@ Sritulakan</pre></div>
     </div>
   </div>
 
-  <div class="container-grid" id="showcase" style="grid-template-columns: 1fr 1fr;">
+  <div class="container-grid" id="TU Life" style="grid-template-columns: 1fr 1fr;">
 
     <div class="vertical-container-grid">
         <div class="content" style="
@@ -193,8 +193,67 @@ Sritulakan</pre></div>
     </div>
 
 </div>
+  <div class="container-grid" id="showcase" style="grid-template-columns: 1fr 1fr;">
+
+    <div class="vertical-container-grid">
+        <div class="content" style="
+            align-items: center;
+            background-color: #f8f8f8;
+            ">
+            <pre style="
+                text-decoration: underline;
+            ">TU Life</pre>
+        </div>
+        <div class="content box">
+            <pre class="info" style="font-size: 38px;
+            padding-top: 66px;
+            padding-right: 8px;">   Faculty of science
+         Football player</pre>
+        </div>
+    </div>
+
+    <div class="vertical-container-grid" style="      
+        grid-template-rows: 1fr;
+        position: relative;
+        overflow: hidden;
+        margin-top: 8px;
+    ">  <div class="content" style="
+      height: 600px; 
+      background-image: url('images/351165959_2759158294226835_5491857320326414326_n.jpg');
+      background-size: cover;
+      background-position: center;
+    ">
+      
+      </div>
+    </div>
+</div>
+
+<div class="footer" style="margin-top: 70px;">
+  <h2>Contact Me  </h2><p>tel: 096-980-8885    Email: chanon.srit@dome.tu.ac.th</p>
+</div>
+
+<script>
+document.addEventListener('scroll', function() {
+    var sections = document.querySelectorAll('.container');
+    var headerLinks = document.querySelectorAll('.navigation a');
+
+    sections.forEach(function(section, index) {
+        var top = section.getBoundingClientRect().top;
+        if (top >= 0 && top < window.innerHeight * 0.5) {
+            headerLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+            headerLinks[index].classList.add('active');
+        }
+    });
+});
+
+document.getElementById("resume-content").addEventListener("click", function() {
+this.classList.toggle("full-size");
+});
 
 
+</script>
 
 </body>
 </html>
