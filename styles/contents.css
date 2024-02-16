@@ -42,16 +42,22 @@
 }
 
 @media screen and (max-width: 800px) {
-  .container-grid{
-
+  .container-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-
-    
-  
+    grid-template-rows: auto; /* Reset grid-template-rows to auto */
   }
-}
+
+  #showcase,
+  #TU-life {
+    /* Remove specific grid-template-columns */
+    grid-template-columns: auto; /* Reset grid-template-columns to auto */
+  }
+
+  }
+
+  .two-columns{
+    grid-template-columns: 1fr 1fr;
+  }
 
 .box{
   border: 2px solid #333;
