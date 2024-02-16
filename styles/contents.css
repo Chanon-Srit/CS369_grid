@@ -21,6 +21,7 @@
       max-height: calc(100% - 20px); /* Adjusted to fit within the container */
       max-width: calc(100% - 20px); /* Adjusted to fit within the container */
       cursor: pointer;
+      border-radius: 10px;
 }
 
 .full-size img {
